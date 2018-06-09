@@ -1,0 +1,19 @@
+{
+  "name": "blackboard",
+  "version": "1.0.0",
+  "description": "Coding exercise for Blackboard",
+  "main": "index.hmtl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korrollir/blackboard.git"
+  },
+  "author": "Mark McConnell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korrollir/blackboard/issues"
+  },
+  "homepage": "https://github.com/korrollir/blackboard#readme"
+}
