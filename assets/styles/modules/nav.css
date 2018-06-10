@@ -3,7 +3,23 @@
   color: #fff;
 }
 
-.nav__mobile__text {
+.mobile {
+  background-color: #7a0000;
+  width: 5.6875rem;
+  position: relative;
+}
+
+.mobile__icon {
+  background-color: #fff;
+  height: 0.75rem;
+  width: 1.25rem;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.mobile__text {
   color: #fff;
+  font-size: 1.1875rem;
   font-weight: 500;
+  padding: 0.875rem 0.625rem 0.875rem 0.8125rem;
 }
