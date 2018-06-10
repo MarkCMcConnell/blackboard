@@ -1,0 +1,9 @@
+.nav {
+  background-color: #990000;
+  color: #fff;
+}
+
+.nav__mobile__text {
+  color: #fff;
+  font-weight: 500;
+}
