@@ -1,0 +1,33 @@
+.events__event {
+  display: flex;
+}
+
+.events__date {
+  padding-top: 1.125rem;
+  text-align: center;
+}
+
+.events__month {
+  font-weight: 400;
+}
+
+.events__number {
+  font-size: 2rem;
+}
+
+.events__text {
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 1.0625rem;
+}
+
+.events__text > h3 {
+  font-weight: 900;
+}
+
+.events__view {
+  display: block;
+  font-weight: 900;
+  padding-top: 1.8125rem;
+  padding-bottom: 1.5rem;
+}

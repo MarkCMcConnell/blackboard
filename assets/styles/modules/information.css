@@ -1,6 +1,6 @@
 .information {
   background-color: #fff;
-  padding: 1.5rem 1.3125rem;
+  padding: 1.5rem 1.3125rem 0;
 }
 
 .info__title {
@@ -11,6 +11,10 @@
   padding-top: 3.333rem;
 }
 
+.info__title--padding-bottom {
+  padding-bottom: 1rem;
+}
+
 .info__subtitle {
   font-size: 1.25rem;
   font-weight: 900;
@@ -18,14 +22,11 @@
 }
 
 .info__text {
-  font-size: 1.08333rem;
-  font-weight: 400;
   width: 100%;
   padding-top: 1.3125rem;
 }
 
 .info__link {
   display: block;
-  font-size: 1.08333rem;
   padding-top: 1.375rem;
 }
