@@ -10,7 +10,7 @@
   <body>
     
     <!-- School name and logo -->
-    <header class="container container--no-m-top school">
+    <header class="container container--no-m-top school" role="banner">
       <figure class="school__mascot">
         <img  src="./assets/images/mascot.png" alt="Hillcrest High School mascot" />
       </figure>
@@ -80,20 +80,17 @@
           alt="Graduating student"
         />
       </figure>
-    <section class="information">
-
+    <main class="information" role="main">
       <!-- Announcements -->
       <article class="content-container">
-        <header>
-          <h1 class="info__title">ANNOUNCEMENTS</h1>
-        </header>
-        <h2 class="info__subtitle">Get connected! Stay Connected</h2>
+        <h2 class="info__title">ANNOUNCEMENTS</h2>
+        <h3 class="info__subtitle">Get connected! Stay Connected</h3>
         <p class="info__text">
           Download your Dallas ISD app today through SchoolConnect and have instant access through your 
           Apple or Android device to news, cafeteria menus, important dates, messages and the Parent Portal.
         </p>
         <a href=# class="info__link">Learn More</a>
-        <h2 class="info__subtitle">Dallas ISD Parent Portal</h2>
+        <h3 class="info__subtitle">Dallas ISD Parent Portal</h3>
         <p class="info__text">
           If you are already a registered user, your current username and password will continue 
           to give you access to the Parent Portal for the 2013-2014 school year.
@@ -102,29 +99,27 @@
 
       <!-- Latest News section -->
       <article class="content-container">
-        <header>
-          <h1 class="info__title info__title--padding-top">LATEST NEWS</h1>
-        </header>
-        <h2 class="info__subtitle">Get connected! Stay Connected</h2>
+        <h2 class="info__title info__title--padding-top">LATEST NEWS</h2>
+        <h3 class="info__subtitle">Get connected! Stay Connected</h3>
         <p class="info__text">
           Download your Dallas ISD app today through SchoolConnect and have instant access through your 
           Apple or Android device to news, cafeteria menus, important dates, messages and the Parent Portal.
         </p>
         <a href=# class="info__link">Learn More</a>
-        <h2 class="info__subtitle">Dallas ISD Parent Portal</h2>
+        <h3 class="info__subtitle">Dallas ISD Parent Portal</h3>
         <p class="info__text">
           If you are already a registered user, your current username and password will continue 
           to give you access to the Parent Portal for the 2013-2014 school year.
         </p>
       </article>
-    </section>
+    </main>
 
     <!-- Sidebar -->
     <aside>
 
       <!-- Shortcut links -->
       <nav class="content-container shortcuts">
-        <h1 class="info__title info__title--padding-top info__title--padding-bottom">SITE SHORTCUTS</h1>
+        <h2 class="info__title info__title--padding-top info__title--padding-bottom">SITE SHORTCUTS</h2>
         <ul class="shortcuts__list">
           <li class="shortcuts__item">
             <a href=# class="shortcuts__link">BSMS Action Plan</a>
@@ -155,13 +150,15 @@
 
       <!-- Calendar events -->
       <section class="content-container events">
-        <h1 class="info__title info__title--padding-top">UPCOMING EVENTS</h1>
+        <h2 class="info__title info__title--padding-top">UPCOMING EVENTS</h2>
         <div class="events__event">
           <div class="events__date">
             <h3 class="events__month">JUN</h3>
+            <!-- TODO: Change to span tag -->
             <h1 class="events__number">2</h1>
           </div>
           <div class="events__text">
+            <!-- TODO: Change to p tag -->
             <h3>TAKS/STAAR Testing</h3>
           </div>
         </div>
@@ -248,6 +245,7 @@
     <!-- Second footer with social media links -->
     <footer class="social">
       <h2 class="social__title">STAY CONNECTED WITH DALLAS ISD</h2>
+      <!-- TODO: Convert back to a list? -->
       <div class="social__items">
         <a class="social__link" href="#">
           <img class="social__icon" src="./assets/images/svg/facebook.png" alt="Facebook social link" />
