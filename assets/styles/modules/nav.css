@@ -1,12 +1,13 @@
 .nav {
   background-color: #990000;
   color: #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .mobile {
   background-color: #7a0000;
   width: 5.6875rem;
-  position: relative;
+  display: inline-block;
 }
 
 .mobile__icon {

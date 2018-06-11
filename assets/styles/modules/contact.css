@@ -1,0 +1,37 @@
+.contact {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-top: 1px solid #fff;
+  padding-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1px;
+}
+
+.contact__title {
+  color: #fff;
+}
+
+.contact__details {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.contact__icon {
+  width: 35px;
+  height: 35px;
+  margin-top: 1.625rem;
+}
+
+.contact__address {
+  padding-left: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.contact__address > p {
+  font-size: 1.08333rem;
+  font-weight: 400;
+}
+
+.contact__street {
+  padding-bottom: 0.25rem;
+}
