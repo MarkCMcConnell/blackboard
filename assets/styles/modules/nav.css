@@ -4,6 +4,7 @@
   border-bottom: 3px solid #fff;
 }
 
+/* Mobile menu for phones and tablets */
 .mobile {
   background-color: #7a0000;
   width: 91px;
@@ -48,5 +49,18 @@
 .mobile__text > h2 {
   color: #fff;
   font-size: 12px;
+  font-weight: 900;
+}
+
+/* Nav menu items and links */
+.active {
+  color: #7a0000;
+}
+.nav__menu {
+  display: none;
+}
+
+.nav__link {
+  color: #fff;
   font-weight: 900;
 }

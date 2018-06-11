@@ -10,10 +10,14 @@
   <body>
     
     <!-- School name and logo -->
-    <header class="school">
+    <header class="container container--no-m-top school">
+      <figure class="school__mascot">
+        <img  src="./assets/images/mascot.png" alt="Hillcrest High School mascot" />
+      </figure>
       <h1 class="school__name">HILLCREST</h1>
       <h2 class="school__type">HIGH SCHOOL</h2>
     </header>
+
     <nav class="nav">
 
       <!-- Mobile menu and hamburger icon -->
@@ -27,6 +31,45 @@
           <h2>MENU</h2>
         </div>
       </div>
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <a class="nav__link" href="#">HOME</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">OUR SCHOOL</a>
+          <ul class="nav__submenu">
+            <li class="nav__item">
+              <a class="nav__link" href="#">LINK</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">LINK</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">LIBRARY</a>
+          <ul class="nav__submenu">
+            <li class="nav__item">
+              <a class="nav__link" href="#">LINK</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">LINK</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ATHLETICS</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">COUNSELING</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">CONTACT US</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">CALENDAR</a>
+        </li>        
+      </ul>
     </nav>
     <!-- Carousel for tablet and above -->
     <div class="container">

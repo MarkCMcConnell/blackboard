@@ -1,5 +1,6 @@
 @import './base/normalize.css';
 @import './base/base.css';
+@import './modules/container.css';
 @import './modules/header.css';
 @import './modules/nav.css';
 @import './modules/carousel.css';
