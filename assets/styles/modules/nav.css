@@ -6,21 +6,46 @@
 
 .mobile {
   background-color: #7a0000;
-  width: 5.6875rem;
-  display: inline-block;
+  width: 91px;
+  position: relative;
 }
 
 .mobile__icon {
+  height: 12px;
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+.mobile__icon span {
+  position: absolute;
+  left: 0;
+  right: 0;
   background-color: #fff;
-  height: 0.75rem;
-  width: 1.25rem;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  height: 2px;
+}
+
+.mobile__icon span:first-of-type {
+  top: 0;
+}
+
+.mobile__icon span:last-of-type {
+  bottom: 0;
+}
+
+.mobile__icon span:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .mobile__text {
+  padding: 15px 11px 13px 43px;
+}
+
+.mobile__text > h2 {
   color: #fff;
-  font-size: 1.1875rem;
-  font-weight: 500;
-  padding: 0.875rem 0.625rem 0.875rem 0.8125rem;
+  font-size: 12px;
+  font-weight: 900;
 }
