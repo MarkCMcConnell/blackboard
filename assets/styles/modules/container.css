@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+.container--bg-white {
+  background-color: #fff;
+}
+
 .content-container {
   background-color: #fff;
   padding: 0 21px;

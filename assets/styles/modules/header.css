@@ -42,5 +42,72 @@
     font-size: 1.666rem;
     margin-left: 7.5625rem;
   }
+
+  .school__search {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .school {
+    padding: 2.5rem auto;
+    
+  }
+
+  .school__container {
+    display: grid;
+    grid-template-columns: repeat(2, 33%) 34%;
+    align-content: center;
+  }
+
+  .school__container--left {
+    grid-column: 1 / 2;
+
+  }
+
+  .school__container--right {
+    grid-column: 3 / 3;
+    justify-self: right;
+    align-self: center;
+  }
+
+  .school__container--right form {
+    display: inline-block;
+  }
+
+  .school__container--right input[type=search],
+  .school__container--right button {
+    height: 1.5rem;
+    outline: none;
+  }
+
+  .school__container--right input[type=search] {
+    font-size: 0.9166rem;
+    font-weight: 100;
+    padding-left: 9px;
+  }
+
+  .school__container--right input[type=search]:hover,
+  .school__container--right input[type=search]:focus {
+    border-color: #333;
+  }
+
+  .school__container--right button {
+    border: none;
+    background-color: #6f6f6f;
+    outline: none;
+    float: right;
+    cursor: pointer;
+  }
+
+  .school__container--right img:hover {
+    background-color: #333;
+  }
+
+  .school__container--right img {
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+  }
 }
 
