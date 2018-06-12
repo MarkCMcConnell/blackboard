@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.carousel__caption {
+  display: none;
+}
+
 .carousel__controls {
   display: none;
 }
@@ -13,10 +17,32 @@
 @media only screen and (min-width: 640px) {
   .carousel {
     position: relative;
-    padding-bottom: 27px;
+    padding-bottom: 1.6875rem;
     margin-bottom: 9px;
     background-color: #990000;
     border: 1px solid #fff;
+  }
+
+  .carousel__caption {
+    display: block;
+    position: absolute;
+    bottom: 39px;
+    left: 9px;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid #fff;
+    width: 12.5rem;
+    padding: 0.75rem;
+  }
+
+  .carousel__caption > h2 {
+    color: #fff;
+    font-size: 1.1666rem;
+  }
+
+  .carousel__caption > p {
+    color: #fff;
+    font-size: 0.91666rem;
+    margin-top: 0.75rem;
   }
 
   .carousel__controls {
