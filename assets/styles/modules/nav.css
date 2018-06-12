@@ -43,12 +43,12 @@
 }
 
 .mobile__text {
-  padding: 15px 11px 13px 43px;
+  padding: 15px 11px 13px 36px;
 }
 
 .mobile__text > h2 {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 900;
 }
 
@@ -63,4 +63,18 @@
 .nav__link {
   color: #fff;
   font-weight: 900;
+}
+
+@media only screen and (min-width: 640px) {
+  .mobile {
+    width: 110px;
+  }
+
+  .mobile__text {
+    padding: 15px 10px 13px 42px;
+  }
+  /* TODO: Fix the right side spacing for MENU */
+  .mobile__text > h2 {
+    font-size: 1.1666rem;
+  }
 }

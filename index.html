@@ -71,16 +71,32 @@
         </li>        
       </ul>
     </nav>
-    <!-- Carousel for tablet and above -->
+
     <div class="container">
-      <figure class="carousel">
+
+      <!-- Carousel for tablet and above -->
+      <picture class="carousel">
+        <source media="(min-width: 640px)" srcset="assets/images/graduate-medium.png">
         <img
           class="carousel__image"
           src="assets/images/graduate-small.png"
           alt="Graduating student"
         />
-      </figure>
+        <div class="carousel__controls">
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot carousel__controls--active"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+        </div>
+      </picture>
+
+
     <main class="information" role="main">
+
       <!-- Announcements -->
       <article class="content-container">
         <h2 class="info__title">ANNOUNCEMENTS</h2>
