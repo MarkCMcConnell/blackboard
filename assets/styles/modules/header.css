@@ -59,6 +59,8 @@
     display: grid;
     grid-template-columns: repeat(2, 33%) 34%;
     align-content: center;
+    max-width: 960px;
+    margin: 0 auto;
   }
 
   .school__container--left {

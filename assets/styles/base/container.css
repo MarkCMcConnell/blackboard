@@ -1,45 +1,5 @@
-/* .container {
-  background-color: #1f1f1f;
-  border: 1px solid #fff;
-  padding: 10px 10px;
-  margin: 1.25rem 0;
-}
-
-.container--no-margin {
-  margin: 0;
-}
-
-.container--no-padding {
-  padding: 0;
-}
-
-.container--bg-white {
-  background-color: #fff;
-}
-
-.container--no-border {
-  border: none;
-} */
-
 .content-container {
   background-color: #fff;
   padding: 23px 21px 12px;
 }
 
-@media only screen and (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-    margin: 1.25rem auto;
-  }
-
-  .container--no-margin {
-    margin: 0 auto;
-  }
-
-  .grid-container {
-    height: 50rem;
-    display: grid;
-    grid-template-columns: repeat(3, 320px);
-    grid-template-rows: repeat(2, 50%);
-  }
-}

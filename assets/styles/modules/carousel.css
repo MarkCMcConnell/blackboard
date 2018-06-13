@@ -18,7 +18,9 @@
 @media only screen and (min-width: 640px) {
   .carousel {
     position: relative;
+    max-width: 640px;
     padding-bottom: 1.6875rem;
+    margin-right: 10px;
     margin-bottom: 9px;
     background-color: #990000;
     border-bottom: 1px solid #fff;

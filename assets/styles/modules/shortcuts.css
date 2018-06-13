@@ -18,3 +18,13 @@
 .shortcuts__link:hover {
   color: #7a0000;
 }
+
+@media only screen and (min-width: 1024px) {
+  .shortcuts {
+    max-width: 320px;
+  }
+  
+  .shortcuts__link {
+    font-size: 0.8125rem;
+  }
+}
