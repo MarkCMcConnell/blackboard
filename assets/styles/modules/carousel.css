@@ -1,10 +1,10 @@
 .carousel {
   display: block;
-  /* padding-bottom: 10px; */
 }
 
 .carousel__container {
   width: 100%;
+  position: relative;
 }
 
 .carousel__image {
@@ -19,14 +19,8 @@
   display: none;
 }
 
-picture {
-  height: auto;
-  width: 100%;
-}
-
 @media only screen and (min-width: 640px) {
   .carousel {
-    /* padding-bottom: 1.6875rem; */
     margin-bottom: 9px;
     background-color: #990000;
     border-bottom: 1px solid #fff;
@@ -34,14 +28,10 @@ picture {
     border-right: 1px solid #fff;
   }
 
-  .carousel picture {
-    position: relative;
-  }
-
   .carousel__caption {
     display: block;
     position: absolute;
-    bottom: 35px;
+    bottom: 9px;
     left: 9px;
     background-color: rgba(0,0,0,.7);
     border: 1px solid #fff;
