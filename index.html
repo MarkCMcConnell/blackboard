@@ -11,25 +11,24 @@
     
     <!-- School name and logo -->
     <header class="school" role="banner">
-      <div class="container container--no-m-top container--bg-white container--no-border">
-        <div class="school__container">
-          <div class="school__container--left">
-            <figure class="school__mascot">
-              <img  src="./assets/images/mascot.png" alt="Hillcrest High School mascot" />
-            </figure>
-            <h1 class="school__name">HILLCREST</h1>
-            <h2 class="school__type">HIGH SCHOOL</h2>
-          </div>
-          <div class="school__container--right">
-            <form action="#">
-              <input type="search" placeholder="SEARCH OUR SITE" />
-              <button type="submit"><img src="./assets/images/search-icon.png" alt="Search magnifying glass icon" /></button>
-            </form>
-          </div>
+       <div class="school__container">
+        <div class="school__container--left">
+          <figure class="school__mascot">
+            <img  src="./assets/images/mascot.png" alt="Hillcrest High School mascot" />
+          </figure>
+          <h1 class="school__name">HILLCREST</h1>
+          <h2 class="school__type">HIGH SCHOOL</h2>
+        </div>
+        <div class="school__container--right">
+          <form action="#">
+            <input type="search" placeholder="SEARCH OUR SITE" />
+            <button type="submit"><img src="./assets/images/search-icon.png" alt="Search magnifying glass icon" /></button>
+          </form>
         </div>
       </div>
     </header>
     <div class="divider divider--gray"></div>
+
     <nav class="nav">
 
       <!-- Mobile menu and hamburger icon -->
@@ -62,7 +61,7 @@
       </div>
     </nav>
     <div class="divider divider--white"></div>
-    <div class="container">
+    <div class="grid-container">
 
       <!-- Carousel for tablet and above -->
       <div class="carousel">
@@ -80,23 +79,21 @@
               You can also place videos in this app.
             </p>
           </div>
-          <div class="carousel__controls">
-            <span class="carousel__controls--dot carousel__controls--active"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-            <span class="carousel__controls--dot"></span>
-          </div>
         </picture>
+        <div class="carousel__controls">
+          <span class="carousel__controls--dot carousel__controls--active"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+          <span class="carousel__controls--dot"></span>
+        </div>
       </div>
 
-    <main class="information" role="main">
-
       <!-- Announcements -->
-      <article class="content-container">
+      <article class="content-container announcments">
         <h2 class="info__title">ANNOUNCEMENTS</h2>
         <h3 class="info__subtitle">Get connected! Stay Connected</h3>
         <p class="info__text">
@@ -112,8 +109,8 @@
       </article>
 
       <!-- Latest News section -->
-      <article class="content-container">
-        <h2 class="info__title info__title--padding-top">LATEST NEWS</h2>
+      <article class="content-container news">
+        <h2 class="info__title">LATEST NEWS</h2>
         <h3 class="info__subtitle">Get connected! Stay Connected</h3>
         <p class="info__text">
           Download your Dallas ISD app today through SchoolConnect and have instant access through your 
@@ -129,11 +126,11 @@
     </main>
 
     <!-- Sidebar -->
-    <aside>
+    <aside class="sidebar content-container">
 
       <!-- Shortcut links -->
-      <nav class="content-container shortcuts">
-        <h2 class="info__title info__title--padding-top info__title--padding-bottom">SITE SHORTCUTS</h2>
+      <nav class="shortcuts">
+        <h2 class="info__title info__title--padding-bottom">SITE SHORTCUTS</h2>
         <ul class="shortcuts__list">
           <li class="shortcuts__item">
             <a href=# class="shortcuts__link">BSMS Action Plan</a>
@@ -163,7 +160,7 @@
       </nav>
 
       <!-- Calendar events -->
-      <section class="content-container events">
+      <section class="events">
         <h2 class="info__title info__title--padding-top">UPCOMING EVENTS</h2>
         <div class="events__event">
           <div class="events__date">
