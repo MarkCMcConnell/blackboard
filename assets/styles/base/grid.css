@@ -14,7 +14,7 @@
     width: 960px;
     margin: 0 auto;
     grid-template-columns: repeat(3, 320px);
-    grid-template-rows: 430px 350;
+    grid-template-rows: 430px auto;
     background-color: #000;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;

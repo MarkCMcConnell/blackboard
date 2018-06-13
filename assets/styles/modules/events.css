@@ -4,29 +4,28 @@
   display: -ms-flexbox;
   display: -webkit-flex; 
   display: flex;
+  padding-top: 1.125rem;
 }
 
-.events__date {
-  padding-top: 1.125rem;
+.events__event--left {
   text-align: center;
 }
 
 .events__month {
+  font-size: 1.08333rem;
   font-weight: 400;
 }
 
-.events__number {
+.events__date {
   font-size: 2rem;
+  font-weight: 900;
+  color: #990000;
 }
 
 .events__text {
-  width: 100%;
-  padding-left: 1rem;
-  padding-top: 1.0625rem;
-}
-
-.events__text > h3 {
+  font-size: 1.0833rem;
   font-weight: 900;
+  padding-left: 1rem;
 }
 
 .events__view {
@@ -36,8 +35,18 @@
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (min-width: 640px) {
+  .events__date {
+    font-size: 1.5rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-  .events__text > h3 {
-    font-size: 0.8125rem;
+  .events__event {
+    padding-top: 1.0625rem;
+  }
+
+  .events__view {
+    padding-top: 1.75rem;
   }
 }

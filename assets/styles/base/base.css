@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   line-height: 1.15;
+  font-family: "Trebuchet MS", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   /* border: 1px solid red; */
 }
 
@@ -20,7 +21,6 @@ h4 {
   font-family: "Trebuchet MS", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -43,6 +43,7 @@ h4 {
 
 p {
   font-size: 1.0625rem;
+  font-weight: 400;
 }
 
 a {
