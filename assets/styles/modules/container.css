@@ -1,7 +1,6 @@
 .container {
   background-color: #1f1f1f;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   padding: 10px 10px;
   margin: 1.25rem 0;
 }
@@ -14,6 +13,10 @@
   background-color: #fff;
 }
 
+.container--no-border {
+  border: none;
+}
+
 .content-container {
   background-color: #fff;
   padding: 0 21px;
@@ -21,7 +24,14 @@
 
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 960px;
-    margin: 0 auto;
+    width: 960px;
+    margin: 1.25rem auto;
+  }
+
+  .grid-container {
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(2, 50%);
   }
 }

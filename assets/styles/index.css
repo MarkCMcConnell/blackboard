@@ -1,5 +1,6 @@
 @import './base/normalize.css';
 @import './base/base.css';
+@import './base/grid.css';
 @import './modules/container.css';
 @import './modules/header.css';
 @import './modules/nav.css';
@@ -9,3 +10,4 @@
 @import './modules/events.css';
 @import './modules/contact.css';
 @import './modules/social.css';
+@import './modules/divider.css';

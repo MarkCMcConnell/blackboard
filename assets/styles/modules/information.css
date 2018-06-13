@@ -27,6 +27,10 @@
 }
 
 .info__link {
-  display: block;
   padding-top: 1.375rem;
+}
+
+.info__link:focus,
+.info__link:hover {
+  color: #990000;
 }

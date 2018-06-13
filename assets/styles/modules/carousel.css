@@ -20,7 +20,9 @@
     padding-bottom: 1.6875rem;
     margin-bottom: 9px;
     background-color: #990000;
-    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
   }
 
   .carousel__caption {
