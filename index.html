@@ -67,7 +67,11 @@
       <!-- Carousel for tablet and above -->
       <div class="carousel">
         <div class="carousel__container">
-          <picture>
+          <img class="carousel__image"
+            srcset="assets/images/graduate-medium.png 640w"
+            src="assets/images/graduate-small.png"
+          />
+          <!-- <picture>
             <source media="(min-width: 1024px)" srcset="assets/images/graduate-large.png">
             <source media="(min-width: 640px)" srcset="assets/images/graduate-medium.png">
             <img
@@ -75,7 +79,7 @@
               src="assets/images/graduate-small.png"
               alt="Graduating student"
             />
-          </picture>
+          </picture> -->
           <div class="carousel__caption">
             <h2>PHOTO TITLE</h2>
             <p>This box will only show up if caption text has been entered.  The captions are optional on a per photo basis. 
