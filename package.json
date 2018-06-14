@@ -2,7 +2,6 @@
   "name": "blackboard",
   "version": "1.0.0",
   "description": "Coding exercise for Blackboard",
-  "homepage": "https://korrollir.github.io",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,5 @@
   "bugs": {
     "url": "https://github.com/korrollir/blackboard/issues"
   },
-  "homepage": "https://github.com/korrollir/blackboard#readme"
+  "homepage": "https://github.com/korrollir/blackboard"
 }
