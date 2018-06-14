@@ -1,10 +1,11 @@
 var MobileNav = (function() {
   var mobileMenuText = document.getElementsByClassName('mobile__text')[0];
-  var schoolMenu = document.querySelector('.mobile__menu #school');
-  var schoolSubMenu = document.querySelector('.mobile__menu .nav__submenu--school')[0];
-  var libraryMenu = document.querySelector('.mobile__menu #library');
-  var librarySubMenu = document.querySelector('.mobile__menu .nav__submenu--library')[0];
+  var schoolMenu = document.getElementById('school');
+  var schoolSubMenu = document.getElementsByClassName('nav__submenu--school')[0];
+  var libraryMenu = document.getElementById('library');
+  var librarySubMenu = document.getElementsByClassName('nav__submenu--library')[0];
   var mobileMenu = document.getElementsByClassName('mobile__menu')[0];
+  var navLinks = document.querySelectorAll('.mobile__menu .nav__link');
   
   return {
     init: function() {
@@ -13,26 +14,48 @@ var MobileNav = (function() {
     },
 
     bindUIActions: function() {
+      /* Change display status of the mobile menu and sub-menus on click */
       mobileMenuText.addEventListener('click', function() {
         mobileMenu.classList.toggle('mobile__menu--show');
       });
 
-      schoolMenu.addEventListener('click', function() {
-        schoolSubMenu.style.display = "none"
-          ? schoolSubMenu.style.display = "block"
-          : schoolSubMenu.style.display = "none";
-        
-        // schoolSubMenu.classList.toggle('.nav__submenu--show');
+      schoolMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        schoolSubMenu.classList.toggle('nav__submenu--show');
       });
 
-      libraryMenu.addEventListener('click', function() {
-        librarySubMenu.style.display = "none"
-          ? librarySubMenu.style.display = "block"
-          : librarySubMenu.style.display = "none";
+      libraryMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        librarySubMenu.classList.toggle('nav__submenu--show');
       });
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.toggle('mobile__menu--show');
+        });
+      });
+    }
+  }
+})();
+
+(function() {
+  var controls = document.getElementsByClassName('slideshow_-controls--dot');
+  var slides = document.getElementsByClassName('slideshow__image');
+  var slideNum = 0;
+
+  return {
+    currentSlide: function(selected) {
+      slides.forEach(function(slide) {
+        slide.style.opacity = "0";
+      });
+
+      slides[selected].style.opacity = "1";
+
+      slideNum = selected;
     }
   }
 })();
 
 
 MobileNav.init();
+// SlideShow.init();

@@ -60,12 +60,20 @@
   text-align: center;
 }
 
+.mobile__menu--show {
+  display: block;
+  background-color: #990000;
+  border: 2px solid #fff;
+  z-index: 5;
+}
+
 #school > span,
 #library > span {
   display: block;
   font-size: 1.08333rem;
 }
 
+.mobile__dropdown,
 .mobile__menu #school > span,
 .mobile__menu #library > span,
 .mobile__menu > .nav__link {
@@ -88,14 +96,6 @@
   background-color: #fff;
   color: #990000;
   padding: 1.5rem 0;
-}
-
-
-.mobile__menu--show {
-  display: block;
-  background-color: #990000;
-  border: 2px solid #fff;
-  z-index: 5;
 }
 
 .nav__submenu--show {
