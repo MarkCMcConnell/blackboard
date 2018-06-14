@@ -56,7 +56,9 @@
   }
 
   .school__container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 33% 33% 34%;
     grid-template-columns: repeat(2, 33%) 34%;
     align-content: center;
     max-width: 960px;
@@ -64,12 +66,14 @@
   }
 
   .school__container--left {
+    -ms-grid-column: 1;
     grid-column: 1 / 2;
 
   }
 
   .school__container--right {
     display: block;
+    -ms-grid-column: 3;
     grid-column: 3 / 3;
     justify-self: right;
     align-self: center;
