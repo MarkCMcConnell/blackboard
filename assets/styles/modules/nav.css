@@ -91,7 +91,7 @@
   .nav__menu {
     display: flex;
     align-items: center;
-    max-width: 960px;
+    width: 960px;
     margin: 0 auto;
     list-style-type: none;
   }
@@ -106,7 +106,7 @@
   }
 
   .nav__link:first-of-type {
-    padding-left: 0.6875rem;
+    /* padding-left: 0.6875rem; */
   }
 
   .nav__submenu {

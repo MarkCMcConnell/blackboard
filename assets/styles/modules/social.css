@@ -27,3 +27,24 @@
   height: 2.3125rem;
   width: 2.3125rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  .social {
+    width: 40%;
+    margin: 0;
+    padding: 1.9375rem 0 0 1.175rem;
+  }
+
+  .social__link {
+    padding-right: 0.8125rem;
+  }
+
+  .social__link:first-of-type {
+    padding-left: none;
+  }
+
+  .social__icon {
+    height: 2.625rem;
+    width: 2.625rem;
+  }
+}

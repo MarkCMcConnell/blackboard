@@ -8,6 +8,8 @@
 
 .contact__title {
   color: #fff;
+  font-size: 1.333rem;
+  font-size: 400;
 }
 
 .contact__details {
@@ -38,7 +40,16 @@
   display: none;
 }
 
+.contact__svg {
+  display: none;
+}
+
 @media only screen and (min-width: 640px) {
+  .contact {
+    margin-bottom: none;
+    height: 100%;
+  }
+
   .contact::after {
     content: '';
     clear: both;
@@ -53,11 +64,33 @@
     display: block;
     float: right;
   }
+
+  .contact__svg {
+    display: block;
+    padding-top: 1.125rem;
+    height: 89px;
+    width: 85px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .contact {
     border: none;
     margin: 0;
+    padding-left: 1.375rem;
+    width: 40%;
+  }
+
+  .contact__svg {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 118px;
+  }
+
+  .contact__svg img {
+    display: block;
+    height: 118px;
+    width: 113px;
   }
 }
