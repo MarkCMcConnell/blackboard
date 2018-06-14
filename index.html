@@ -33,26 +33,51 @@
 
       <!-- Mobile menu and hamburger icon -->
       <div class="mobile">
-        <div class="mobile__icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <div class="mobile__text">
+          <div class="mobile__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <h2>MENU</h2>
+        </div>
+        <div class="mobile__menu">
+          <a class="nav__link" href="#">HOME</a>
+          <div id="school">
+            <a class="nav__link" href="#">OUR SCHOOL</a>
+            <div class="nav__submenu--school">
+              <a class="nav__link" href="#">CURRICULUM</a>
+              <a class="nav__link" href="#">INFORMATION</a>
+            </div>
+          </div>
+          <div id="library">
+            <a class="nav__link" href="#">LIBRARY</a>
+            <div class="nav__submenu--library">
+              <a class="nav__link" href="#">INFORMATION</a>
+              <a class="nav__link" href="#">CATALOGUE</a>
+            </div>
+          </div>
+          <a class="nav__link" href="#">ATHLETICS</a>
+          <a class="nav__link" href="#">COUNSELING</a>
+          <a class="nav__link" href="#">CONTACT US</a>
+          <a class="nav__link" href="#">CALENDAR</a>
         </div>
       </div>
       <div class="nav__menu">
         <a class="nav__link active" href="#">HOME</a>
-        <a class="nav__link" href="#">OUR SCHOOL</a>
-        <div class="nav__submenu">
-          <a class="nav__link" href="#">LINK</a>
-          <a class="nav__link" href="#">LINK</a>
+        <div id="school">
+          <a class="nav__link" href="#">OUR SCHOOL</a>
+          <div class="nav__submenu--school">
+            <a class="nav__link" href="#">CURRICULUM</a>
+            <a class="nav__link" href="#">INFORMATION</a>
+          </div>
         </div>
-        <a class="nav__link" href="#">LIBRARY</a>
-        <div class="nav__submenu">
-          <a class="nav__link" href="#">LINK</a>
-          <a class="nav__link" href="#">LINK</a>
+        <div id="library">
+          <a class="nav__link" href="#">LIBRARY</a>
+          <div class="nav__submenu--library">
+            <a class="nav__link" href="#">INFORMATION</a>
+            <a class="nav__link" href="#">CATALOGUE</a>
+          </div>
         </div>
         <a class="nav__link" href="#">ATHLETICS</a>
         <a class="nav__link" href="#">COUNSELING</a>
@@ -277,5 +302,6 @@
        </div>
       </div>
     </footer>
+    <script type="text/javascript" src="./assets/scripts/index.js"></script>
   </body>
 </html>

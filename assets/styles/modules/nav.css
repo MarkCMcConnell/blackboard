@@ -51,10 +51,61 @@
   font-weight: 900;
 }
 
+/* Mobile Menu styling */
+.mobile__menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 20rem;
+  text-align: center;
+}
+
+.mobile__menu #school,
+.mobile__menu #library,
+.mobile__menu > .nav__link {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.nav__submenu--school > .nav__link,
+.nav__submenu--library > .nav__link {
+  width: 100%;
+}
+
+.nav__submenu--school,
+.nav__submenu--library {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+
+.nav__submenu--school .nav__link,
+.nav__submenu--library .nav__link {
+  width: 10rem;
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  color: #990000;
+  text-align: center;
+}
+
+.mobile__menu--show {
+  display: block;
+  background-color: #990000;
+  border: 2px solid #fff;
+  z-index: 5;
+}
+
+.nav__submenu--show {
+  display: block;
+}
+
 /* Nav menu items and links */
 .active {
   background-color: #7a0000;
 }
+
 .nav__menu {
   display: none;
 }
@@ -81,7 +132,6 @@
 @media only screen and (min-width: 1024px) {
   .nav {
     width: 100%;
-
   }
   /* Hide mobile menu and icon when on desktop size */
   .mobile {
@@ -105,11 +155,37 @@
     background-color: #7a0000;
   }
 
-  .nav__link:first-of-type {
-    /* padding-left: 0.6875rem; */
-  }
-
   .nav__submenu {
     display: none;
+  }
+
+  /* Display sublinks for Our School and Library */
+  #school,
+  #library {
+    position: relative;
+  }
+
+  #school:hover,
+  #library:hover {
+    background-color: #7a0000;
+  }
+
+  #school:hover .nav__submenu--school,
+  #library:hover .nav__submenu--library {
+    display: block;
+  }
+
+  .nav__submenu--school,
+  .nav__submenu--library {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+  }
+
+  .nav__submenu--school .nav__link:hover,
+  .nav__submenu--library .nav__link:hover {
+    background-color: #7a0000;
+    color: #fff;
   }
 }
