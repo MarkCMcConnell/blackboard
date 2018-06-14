@@ -24,13 +24,12 @@ account.  Then, go to your version of the repo, click on Settings, and choose to
 * JavaScript (pre-ES2015)
 
 ## Ideas for Improvement / TODO List
-- Move slideshow image, captions, calendar events, announcements, and news to JSON Objects or API endpoints to 
-
-allow for ease of editing.
+- Move slideshow image, captions, calendar events, announcements, and news to JSON Objects or API endpoints to allow for ease of editing and flexibility.
 	* Use JavaScript to build the elements and insert into the DOM
 - Add in smoother element state transitions through CSS
 - Provide better fallback for CSS `grid` for IE11
 	* Slideshow, announcements, and news sections are not accepting `-ms` prefixes
+- Add toggle for `aria-expanded` for mobile menu
 
 ## Author
 Mark McConnell – Creator – (https://github.com/korrollir)

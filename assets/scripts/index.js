@@ -10,7 +10,6 @@ var MobileNav = (function() {
   return {
     init: function() {
       this.bindUIActions();
-      
     },
 
     bindUIActions: function() {
@@ -29,11 +28,18 @@ var MobileNav = (function() {
         librarySubMenu.classList.toggle('nav__submenu--show');
       });
 
-      navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', function() {
+          // Locate the currently active link
+          var currentLink = document.getElementsByClassName('active');
+          // Remove the currently active link
+          currentLink[0].className = currentLink[0].className.replace(' active', '');
+          // Set new active link
+          this.className += ' active';
+          // Toggle the menu open or close when clicking on a mobile menu link
           mobileMenu.classList.toggle('mobile__menu--show');
         });
-      });
+      };
     }
   }
 })();
