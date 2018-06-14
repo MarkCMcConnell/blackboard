@@ -12,12 +12,11 @@
 @media only screen and (min-width: 1024px) {
   .grid-container {
     display: grid;
-    box-sizing: content-box;
     width: 960px;
     margin: 0 auto;
     margin-top: 1.25rem;
     grid-template-columns: repeat(3, 320px);
-    grid-template-rows: 430px auto;
+    grid-template-rows: 442px auto;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
   }

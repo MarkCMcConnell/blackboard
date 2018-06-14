@@ -72,7 +72,7 @@
   .mobile__text {
     padding: 15px 10px 13px 42px;
   }
-  /* TODO: Fix the right side spacing for MENU */
+
   .mobile__text > h2 {
     font-size: 1.1666rem;
   }

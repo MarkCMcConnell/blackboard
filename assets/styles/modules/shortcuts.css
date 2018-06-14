@@ -1,5 +1,6 @@
 .shortcuts__list {
   font-size: 1.08333rem;
+  padding-top: 0.875rem;
   padding-left: 1.3125rem;
 }
 
@@ -21,7 +22,11 @@
 
 @media only screen and (min-width: 1024px) {
   .shortcuts {
-    max-width: 320px;
+    padding-top: 1.5rem;
+  }
+
+  .shortcuts__list {
+    padding-top: 1rem;
   }
   
   .shortcuts__link {
