@@ -56,15 +56,21 @@
   display: none;
   position: absolute;
   left: 0;
-  width: 20rem;
+  width: 14rem;
   text-align: center;
 }
 
-.mobile__menu #school,
-.mobile__menu #library,
+#school > span,
+#library > span {
+  display: block;
+  font-size: 1.08333rem;
+}
+
+.mobile__menu #school > span,
+.mobile__menu #library > span,
 .mobile__menu > .nav__link {
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 0.75rem 0;
 }
 
 .nav__submenu--school > .nav__link,
@@ -75,20 +81,15 @@
 .nav__submenu--school,
 .nav__submenu--library {
   display: none;
-  position: absolute;
-  z-index: 5;
-  right: 0;
 }
-
 
 .nav__submenu--school .nav__link,
 .nav__submenu--library .nav__link {
-  width: 10rem;
-  padding: 0.5rem 2rem;
   background-color: #fff;
   color: #990000;
-  text-align: center;
+  padding: 1.5rem 0;
 }
+
 
 .mobile__menu--show {
   display: block;
@@ -108,6 +109,7 @@
 
 .nav__menu {
   display: none;
+  width: 100%;
 }
 
 .nav__link {
@@ -146,6 +148,8 @@
     list-style-type: none;
   }
 
+  #school .nav__link,
+  #library .nav__link,
   .nav__link {
     padding: 0.75rem 0.6875rem 0.5625rem;
     transition: all .3s ease-out;
@@ -173,6 +177,12 @@
   #school:hover .nav__submenu--school,
   #library:hover .nav__submenu--library {
     display: block;
+  }
+
+  .nav__submenu--school .nav__link,
+  .nav__submenu--library .nav__link {
+    width: 10rem;
+    padding: 0.5rem 2rem;
   }
 
   .nav__submenu--school,
