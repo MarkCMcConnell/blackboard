@@ -15,17 +15,13 @@
 
 .social__link {
   display: inline-block;
-  padding-right: 0.6875rem; 
-}
-
-.social__link:first-of-type {
-  padding-left: 1px;
+  padding-right: 9px; 
 }
 
 .social__icon {
   color: #fff;
-  height: 2.3125rem;
-  width: 2.3125rem;
+  height: 30px;
+  width: 30px;
 }
 
 @media only screen and (min-width: 1024px) {
