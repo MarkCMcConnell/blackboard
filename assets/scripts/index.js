@@ -44,24 +44,5 @@ var MobileNav = (function() {
   }
 })();
 
-(function() {
-  var controls = document.getElementsByClassName('slideshow_-controls--dot');
-  var slides = document.getElementsByClassName('slideshow__image');
-  var slideNum = 0;
-
-  return {
-    currentSlide: function(selected) {
-      slides.forEach(function(slide) {
-        slide.style.opacity = "0";
-      });
-
-      slides[selected].style.opacity = "1";
-
-      slideNum = selected;
-    }
-  }
-})();
-
-
 MobileNav.init();
 // SlideShow.init();
